@@ -22,7 +22,7 @@ include 'data.php';
 <body>
 
     <h1><?php echo $prova; ?></h1>
-    <table style="width:100%">
+    <table style="width:50%">
         <tr>
             <th>name</th>
             <th>description</th>
@@ -30,12 +30,11 @@ include 'data.php';
             <th>vote</th>
             <th>distance to center</th>
         </tr>
-        <tr>
+        
             <?php foreach ($hotels as $hotel) {
-                echo "<td>" . $hotel["name"] . "</td>";
+                echo "<tr>" . "<td>" . $hotel["name"] . "</td>" . "<td>" . $hotel["description"] . "</td>" . "<td>" . ($hotel['parking'] ? 'Sì' : 'No') . "</td>" . "<td>" . $hotel["vote"] . "</td>" . "<td>" . $hotel["distance_to_center"] . "</td>" . "</tr>";
             }
             ?>
-        </tr>
 </body>
 
 </html>
