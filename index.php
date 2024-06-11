@@ -32,7 +32,7 @@ include 'data.php';
         </tr>
         
             <?php foreach ($hotels as $hotel) {
-                echo "<tr>" . "<td>" . $hotel["name"] . "</td>" . "<td>" . $hotel["description"] . "</td>" . "<td>" . ($hotel['parking'] ? 'Sì' : 'No') . "</td>" . "<td>" . $hotel["vote"] . "</td>" . "<td>" . $hotel["distance_to_center"] . "</td>" . "</tr>";
+                echo "<tr>" . "<td>" . $hotel["name"] . "</td>" . "<td>" . $hotel["description"] . "</td>" . "<td>" . ($hotel['parking'] ? 'Sì' : 'No') . "</td>" . "<td>" . $hotel["vote"] ."/5" . "</td>" . "<td>" . $hotel["distance_to_center"] ." Km" . "</td>" . "</tr>";
             }
             ?>
     </table>
