@@ -35,6 +35,7 @@ include 'data.php';
                 echo "<tr>" . "<td>" . $hotel["name"] . "</td>" . "<td>" . $hotel["description"] . "</td>" . "<td>" . ($hotel['parking'] ? 'Sì' : 'No') . "</td>" . "<td>" . $hotel["vote"] . "</td>" . "<td>" . $hotel["distance_to_center"] . "</td>" . "</tr>";
             }
             ?>
+    </table>
 </body>
 
 </html>
