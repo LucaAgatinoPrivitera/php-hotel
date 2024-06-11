@@ -1,5 +1,5 @@
 <?php
-
+    $prova = "ciao";
     $hotels = [
 
         [

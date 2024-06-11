@@ -1,3 +1,6 @@
+<?php
+include 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,8 @@
     <title>php-hotel</title>
 </head>
 <body>
+
+<h1><?php echo $prova; ?></h1>
     
 </body>
 </html>
