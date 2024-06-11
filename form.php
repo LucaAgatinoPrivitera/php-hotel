@@ -21,7 +21,15 @@ include 'data.php';
 
 <body>
 
-    <h1><?php echo $prova; ?></h1>
+    <h1>Bonus 1</h1>
+    <form action="parking.php" method="GET">
+
+        <input type="radio" name="Park" value="HTML">
+        <label for="html">Parking</label><br>
+
+        <button type="submit">Invia</button>
+
+    </form>
     <table style="width:50%">
         <tr>
             <th>name</th>
@@ -31,13 +39,13 @@ include 'data.php';
             <th>distance to center</th>
         </tr>
 
-        <?php foreach ($hotels as $hotel) {
-            echo "<tr>" . "<td>" . $hotel["name"] . "</td>" . "<td>" . $hotel["description"] . "</td>" . "<td>" . ($hotel['parking'] ? 'Sì' : 'No') . "</td>" . "<td>" . $hotel["vote"] . "/5" . "</td>" . "<td>" . $hotel["distance_to_center"] . " Km" . "</td>" . "</tr>";
-        }
+        <?php foreach ($hotels as $hotel)
+
+                echo "<tr>" . "<td>" . $hotel["name"] . "</td>" . "<td>" . $hotel["description"] . "</td>" . "<td>" . ($hotel['parking'] ? 'Sì' : 'No') . "</td>" . "<td>" . $hotel["vote"] . "/5" . "</td>" . "<td>" . $hotel["distance_to_center"] . " Km" . "</td>" . "</tr>";
         ?>
     </table>
 
-    <a href="form.php">BONUS 1</a>
+
 </body>
 
 </html>
