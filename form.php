@@ -23,12 +23,13 @@ include 'data.php';
 
     <h1>Bonus 1</h1>
     <form action="parking.php" method="GET">
+        <input type="radio" name="Park" value="yes" id="yes">
+        <label for="yes">Parking</label><br>
 
-        <input type="radio" name="Park" value="HTML">
-        <label for="html">Parking</label><br>
+        <input type="radio" name="Park" value="no" id="no">
+        <label for="no">No Parking</label><br>
 
         <button type="submit">Invia</button>
-
     </form>
     <table style="width:50%">
         <tr>

@@ -40,7 +40,8 @@ include 'data.php';
         </tr>
 
         <?php foreach ($hotels as $hotel) {
-            if ($hotel['parking'] == 'Sì') {
+            $parkingPreference = $_GET['Park'] == 'yes' ? true : false;
+            if ($hotel['parking'] == $parkingPreference) {
 
                 echo "<tr>" . "<td>" . $hotel["name"] . "</td>" . "<td>" . $hotel["description"] . "</td>" . "<td>" . ($hotel['parking'] ? 'Sì' : 'No') . "</td>" . "<td>" . $hotel["vote"] . "/5" . "</td>" . "<td>" . $hotel["distance_to_center"] . " Km" . "</td>" . "</tr>";
             }
